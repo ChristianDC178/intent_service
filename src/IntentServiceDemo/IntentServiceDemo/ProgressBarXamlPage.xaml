@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="IntentServiceDemo.ProgressBarXamlPage"
+             Title="Synchronization Demo"
+             Padding="10">
+    <StackLayout>
+
+        <Label x:Name="lblElement" Text="Pending"></Label>
+
+        <ProgressBar x:Name="styledProgressBar"
+                     WidthRequest="500"
+                     ScaleY="5"
+                     ProgressColor="Orange"
+                      HorizontalOptions="CenterAndExpand" />
+
+        <Button Text="Comenzar de nuevo cuando haya terminado (No esta terminado)"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="OnButtonClicked"
+                IsVisible="False"/>
+
+    </StackLayout>
+</ContentPage>
